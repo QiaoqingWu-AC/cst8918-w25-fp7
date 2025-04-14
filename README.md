@@ -13,7 +13,7 @@ via **Terraform** and **CI/CD workflows** powered by **GitHub Actions**. It simu
 (TODO: add screenshot)
 
 ## Instructions for Running the Project
-### Backend
+### Backend Setup
 - Sets up the Azure Blob Storage backend for storing Terraform state.
 - Run once locally:
 ```bash
@@ -22,11 +22,11 @@ terraform init
 terraform plan -out=tf-backend.plan
 terraform apply tf-backend.plan
 ```
-### Modules
+### Terraform Modules
 - Manages:
   - Resource Group
   - Virtual Network + Subnets
-  - AKS Clusters (test and prod)
+  - AKS Clusters (`test` and `prod`)
 - Uses the remote backend and GitHub OIDC for authentication.
 ```bash
 cd infra/tf-app
