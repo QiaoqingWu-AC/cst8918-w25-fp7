@@ -1,8 +1,9 @@
 {
   "name": "branch-main",
   "issuer": "https://token.actions.githubusercontent.com",
-  "subject": "repo:QiaoqingWu-AC/cst8918-w25-fp7:branch:main",
-  "description": "CST8918 Final Project (Group 7) - GitHub Actions",
+  "subject": "repo:QiaoqingWu-AC/cst8918-w25-fp7:ref:refs/heads/main",
+  "description": "CST8918 Final Project (Group 7) - GitHub Actions (main branch)",
   "audiences": ["api://AzureADTokenExchange"]
 }
+
 
