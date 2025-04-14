@@ -2,7 +2,7 @@
 
 
 resource "kubernetes_deployment" "remix_weather_prod" {
-    provider = kubernetes.prod
+  provider = kubernetes.prod
   metadata {
     name      = "remix-weather-prod"
     namespace = "default"
@@ -41,7 +41,7 @@ resource "kubernetes_deployment" "remix_weather_prod" {
 
 
 resource "kubernetes_service" "remix_weather_service_prod" {
-    provider = kubernetes.prod
+  provider = kubernetes.prod
   metadata {
     name      = "remix-weather-service-prod"
     namespace = "default"

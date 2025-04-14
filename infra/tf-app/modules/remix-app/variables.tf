@@ -24,7 +24,7 @@ variable "test_redis_hostname" {
 }
 
 variable "test_redis_key" {
-  type = string
+  type      = string
   sensitive = true
 }
 
@@ -33,6 +33,6 @@ variable "prod_redis_hostname" {
 }
 
 variable "prod_redis_key" {
-  type = string
+  type      = string
   sensitive = true
 }
