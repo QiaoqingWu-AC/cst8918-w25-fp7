@@ -10,3 +10,9 @@ variable "location" {
   description = "The Azure region"
   default     = "Canada Central"
 }
+
+variable "image_tag" {
+  description = "The tag of the Docker image to be used in the Kubernetes deployments"
+  type        = string
+  default     = "latest"
+}
