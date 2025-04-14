@@ -20,7 +20,7 @@ module "aks_test" {
   source              = "./modules/aks"
   resource_group_name = var.resource_group_name
   location            = var.location
-  depends_on = [azurerm_resource_group.project_rg]
+  depends_on          = [azurerm_resource_group.project_rg]
 
   cluster_name        = "aks-test"
   node_count          = 1
@@ -33,8 +33,8 @@ module "aks_prod" {
   source              = "./modules/aks"
   resource_group_name = var.resource_group_name
   location            = var.location
-  depends_on = [azurerm_resource_group.project_rg]
-  
+  depends_on          = [azurerm_resource_group.project_rg]
+
   cluster_name        = "aks-prod"
   node_count          = 1
   min_count           = 1
