@@ -1,0 +1,8 @@
+{
+  "name": "pull-request",
+  "issuer": "https://token.actions.githubusercontent.com",
+  "subject": "repo:QiaoqingWu-AC/cst8918-w25-fp7:pull_request",
+  "description": "CST8918 Final Project (Group 7) - GitHub Actions",
+  "audiences": ["api://AzureADTokenExchange"]
+}
+
