@@ -1,0 +1,7 @@
+{
+  "name": "production-deploy",
+  "issuer": "https://token.actions.githubusercontent.com",
+  "subject": "repo:QiaoqingWu-AC/cst8918-w25-fp7:environment:production",
+  "description": "CST8918 Final Project (Group 7) - GitHub Actions",
+  "audiences": ["api://AzureADTokenExchange"]
+}
