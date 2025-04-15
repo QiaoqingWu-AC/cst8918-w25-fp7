@@ -12,15 +12,21 @@ via **Terraform** and **CI/CD workflows** powered by **GitHub Actions**. It simu
 ## Screenshot of the completed GitHub Actions Workflows
 (TODO: add screenshot)
 ### Terraform Static Tests workflow
+A GitHub Actions workflow to run all Terraform static code analysis tasks (fmt, validate, tfsec) on "push" to any branch
 ![checks](./screenshots/Terraform-Static-Tests-Workflow.png)
 ### Terraform CI-CD
+A GitHub Actions workflow to run "tflint" and "terraform plan" on "pull_request" to the main branch, run "terraform apply" on "push" to the main branch
 ![checks](./screenshots/Terraform-CI-CD.png)
 ### Terraform Configuration Drift Detection
+A GitHub Actions workflow will run daily to detect drift between the deployed infrastructure and the Terraform configuration. If drift is detected, the workflow will create an issue in the repository to alert the team.
 ![checks](./screenshots/drift_detection.png)
 ![checks](./screenshots/drift_failed.png)
 ### Build & Push Remix Weather App
+A GitHub Actions workflow to build and push the Docker image for the Weather App to the ACR
 ![checks](./screenshots/Build-Push-Remix-Weather-App.png)
-### 
+### Deploy Remix Weather App to the AKS cluster
+A GitHub Actions workflow to deploy the Remix Weather Application to the AKS cluster
+![checks](./screenshots/depoly_app.png)
 
 
 
