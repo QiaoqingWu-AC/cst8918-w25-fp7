@@ -1,13 +1,13 @@
-name: Build & Push Remix Weather App
+name: Deploy Remix Weather App to AKS
 
 on:
-  pull_request:
+  push:
     branches: [ main ]
     paths:
       - 'infra/tf-app/modules/remix-app/**'
 
 jobs:
-  docker-build:
+  deploy-to-aks:
     runs-on: ubuntu-latest
 
     permissions:
@@ -25,10 +25,13 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Log in to ACR
-        run: az acr login --name group7cst8918remixarc
-
-      - name: Build and Push Docker image
+      - name: Run Terraform Apply
         run: |
-          docker build -t group7cst8918remixarc.azurecr.io/remix-weather:${{ github.sha }} infra/tf-app/modules/remix-app
-          docker push group7cst8918remixarc.azurecr.io/remix-weather:${{ github.sha }}
+          cd infra/tf-app
+          terraform init
+          terraform apply -auto-approve
+        env:
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_ACCESS_KEY: ${{ secrets.ARM_ACCESS_KEY }}
