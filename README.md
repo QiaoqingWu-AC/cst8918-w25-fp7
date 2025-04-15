@@ -1,9 +1,12 @@
 # CST8918-W25-Final Project
 ## Group 7 Members 
-- [Donna Ha (Donna-Smee)](https://github.com/Donna-Smee)
-- [Nikki Shakeraneh (NikkiShaker)](https://github.com/NikkiShaker)
-- [Qiaoqing Wu (QiaoqingWu-AC)](https://github.com/QiaoqingWu-AC)
-- [Yue Gao (Yue0218)](https://github.com/Yue0218)
+
+| Name               | GitHub Username    |
+|--------------------|--------------------|
+| Donna Ha          | [Donna-Smee](https://github.com/Donna-Smee)       |
+| Nikki Shakeraneh  | [NikkiShaker](https://github.com/NikkiShaker)     |
+| Qiaoqing Wu       | [QiaoqingWu-AC](https://github.com/QiaoqingWu-AC)         |
+| Yue Gao           | [Yue0218](https://github.com/Yue0218)         |
 
 ## Project Overview
 This project automates the deployment of a **Remix Weather Application** to Azure using **Infrastructure as Code (IaC)**
