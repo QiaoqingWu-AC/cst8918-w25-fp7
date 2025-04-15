@@ -21,6 +21,8 @@ A GitHub Actions workflow to run "tflint" and "terraform plan" on "pull_request"
 ![checks](./screenshots/Terraform-CI-CD.png)
 ### Terraform Configuration Drift Detection
 A GitHub Actions workflow will run daily to detect drift between the deployed infrastructure and the Terraform configuration. If drift is detected, the workflow will create an issue in the repository to alert the team.
+
+**The workflow failed because Terraform detects drift**
 ![checks](./screenshots/drift_detection.png)
 ![checks](./screenshots/drift_failed.png)
 ### Build & Push Remix Weather App
