@@ -1,5 +1,5 @@
 # CST8918-W25-Final Project
-## Group 7 Members
+## Group 7 Members 
 - [Donna Ha (Donna-Smee)](https://github.com/Donna-Smee)
 - [Nikki Shakeraneh (NikkiShaker)](https://github.com/NikkiShaker)
 - [Qiaoqing Wu (QiaoqingWu-AC)](https://github.com/QiaoqingWu-AC)
