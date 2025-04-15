@@ -1,7 +1,7 @@
 # CST8918-W25-Final Project
 ## Group 7 Members 
 
-| Name               | GitHub Username    |
+| Name               | GitHub Profiles    |
 |--------------------|--------------------|
 | Donna Ha          | [Donna-Smee](https://github.com/Donna-Smee)       |
 | Nikki Shakeraneh  | [NikkiShaker](https://github.com/NikkiShaker)     |
@@ -13,7 +13,6 @@ This project automates the deployment of a **Remix Weather Application** to Azur
 via **Terraform** and **CI/CD workflows** powered by **GitHub Actions**. It simulates a real-world environment with multiple teams and environments (dev, test, prod), applying cloud engineering best practices such as **OIDC-based authentication, remote state management**, and **modular Terraform design**.
 
 ## Screenshot of the completed GitHub Actions Workflows
-(TODO: add screenshot)
 ### Terraform Static Tests workflow
 A GitHub Actions workflow to run all Terraform static code analysis tasks (fmt, validate, tfsec) on "push" to any branch
 ![checks](./screenshots/Terraform-Static-Tests-Workflow.png)
