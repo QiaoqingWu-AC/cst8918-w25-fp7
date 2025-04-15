@@ -1,21 +1,3 @@
-terraform {
-  required_providers {
-    kubernetes = {
-      source                = "hashicorp/kubernetes"
-      configuration_aliases = [kubernetes.test, kubernetes.prod]
-    }
-  }
-}
-
-provider "kubernetes" {
-  alias = "test"
-}
-
-provider "kubernetes" {
-  alias = "prod"
-}
-
-
 # Container registry to store weather app docker image
 resource "azurerm_container_registry" "acrgroup7" {
   name                = "remixarcgroup7cst8918"
@@ -35,6 +17,4 @@ resource "azurerm_redis_cache" "redis" {
   capacity            = 0
   family              = "C"
   sku_name            = "Basic"
-
 }
-

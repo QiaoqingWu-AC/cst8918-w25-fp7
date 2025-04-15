@@ -1,3 +1,15 @@
+terraform {
+  required_providers {
+    kubernetes = {
+      source = "hashicorp/kubernetes"
+      configuration_aliases = [
+        kubernetes.test,
+        kubernetes.prod
+      ]
+    }
+  }
+}
+
 provider "azurerm" {
   features {}
   use_oidc = true
@@ -18,7 +30,6 @@ provider "kubernetes" {
   client_key             = base64decode(module.aks_prod.client_key)
   cluster_ca_certificate = base64decode(module.aks_prod.cluster_ca_certificate)
 }
-
 
 resource "azurerm_resource_group" "project_rg" {
   name     = var.resource_group_name
@@ -58,7 +69,6 @@ module "aks_prod" {
   max_count           = 3
   enable_auto_scaling = true
 }
-
 
 module "remix_app" {
   source = "./modules/remix-app"
