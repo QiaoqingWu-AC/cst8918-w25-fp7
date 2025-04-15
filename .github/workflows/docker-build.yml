@@ -26,9 +26,9 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Log in to ACR
-        run: az acr login --name ${{ secrets.ACR_NAME }}
+        run: az acr login --name remixarcgroup7cst8918
 
       - name: Build and Push Docker image
         run: |
-          docker build -t ${{ secrets.ACR_NAME }}.azurecr.io/remix-weather:${{ github.sha }} infra/tf-app/modules/remix-app
-          docker push ${{ secrets.ACR_NAME }}.azurecr.io/remix-weather:${{ github.sha }}
+          docker build -t remixarcgroup7cst8918.azurecr.io/remix-weather:${{ github.sha }} infra/tf-app/modules/remix-app
+          docker push remixarcgroup7cst8918.azurecr.io/remix-weather:${{ github.sha }}
