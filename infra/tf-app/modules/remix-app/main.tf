@@ -18,7 +18,7 @@ provider "kubernetes" {
 
 # Container registry to store weather app docker image
 resource "azurerm_container_registry" "acrgroup7" {
-  name                = "remixarcgroup7cst8918"
+  name                = "group7cst8918remixarc"
   resource_group_name = var.resource_group_name
   location            = var.location
   sku                 = "Basic"
