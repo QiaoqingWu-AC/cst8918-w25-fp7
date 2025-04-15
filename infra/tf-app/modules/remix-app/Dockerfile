@@ -4,7 +4,7 @@ FROM node:18 AS builder
 # Set working directory
 WORKDIR /app
 
-# Copy app files
+# Copy app files 
 COPY . .
 
 # Install dependencies and build the app

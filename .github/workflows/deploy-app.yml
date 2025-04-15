@@ -18,6 +18,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.5.7  # or whatever version you're using
+
       - name: Azure Login
         uses: azure/login@v1
         with:
