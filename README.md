@@ -11,6 +11,18 @@ via **Terraform** and **CI/CD workflows** powered by **GitHub Actions**. It simu
 
 ## Screenshot of the completed GitHub Actions Workflows
 (TODO: add screenshot)
+### Terraform Static Tests workflow
+![checks](./screenshots/Terraform-Static-Tests-Workflow.png)
+### Terraform CI-CD
+![checks](./screenshots/Terraform-CI-CD.png)
+### Terraform Configuration Drift Detection
+![checks](./screenshots/drift_detection.png)
+![checks](./screenshots/drift_failed.png)
+### Build & Push Remix Weather App
+![checks](./screenshots/Build-Push-Remix-Weather-App.png)
+### 
+
+
 
 ## Instructions for Running the Project
 ### Backend Setup
